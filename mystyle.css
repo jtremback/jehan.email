@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+html {
+    background: black;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: scale(100);
+    opacity: 0;
+    animation: 1s ease-in 4.8s zoomslam forwards;
+}
+
+span {
+    display: none;
+}
+
+@keyframes zoomslam {
+    from {
+        opacity: 100;
+        transform: scale(100);
+    }
+
+    to {
+        opacity: 100;
+        transform: scale(1);
+    }
+}
