@@ -6,19 +6,6 @@ html {
     background: black;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-video {
-    width: 100%;
-}
-
 figure {
     display: flex;
     justify-content: center;
@@ -30,11 +17,7 @@ figure {
     top: 0;
     transform: scale(100);
     opacity: 0;
-    animation: 1s ease-in 4.8s zoomslam forwards;
-}
-
-span {
-    display: none;
+    animation: 1s ease-in zoomslam forwards;
 }
 
 @keyframes zoomslam {
